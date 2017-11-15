@@ -1,24 +1,30 @@
 https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html#1
-¿ªÊ¼:
+å¼€å§‹:
 https://www.tensorflow.org/get_started/
-ocr ÓÃ¹È¸è·şÎñ:
+ocr ç”¨è°·æ­ŒæœåŠ¡:
 https://codelabs.developers.google.com/codelabs/mobile-vision-ocr/#0
 
-Python ½Ì³Ì
+Python æ•™ç¨‹
 https://docs.python.org/3.6/tutorial/index.html
-»úÆ÷Ñ§Ï°ÔÚÏßµç×ÓÊé
+æœºå™¨å­¦ä¹ åœ¨çº¿ç”µå­ä¹¦
 http://neuralnetworksanddeeplearning.com/
 
 https://morvanzhou.github.io/
 
-Îâ¶÷´ï»úÆ÷Ñ§Ï°
+å´æ©è¾¾æœºå™¨å­¦ä¹ 
 https://www.coursera.org/learn/machine-learning
-bÕ¾ÊÓÆµ
+bç«™è§†é¢‘
 https://www.bilibili.com/video/av9912938/?from=search&seid=8524092175320693772#page=5
 octave
 
 https://www.leiphone.com/news/201701/0milWCyQO4ZbBvuW.html
 
 
-keras ÖĞÎÄ
+keras ä¸­æ–‡
 https://keras-cn.readthedocs.io/en/latest/
+
+
+2011 Tom Mitchell(CMU)æœºå™¨å­¦ä¹ 
+http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml
+
+http://ml.memect.com/article/machine-learning-guide.html
