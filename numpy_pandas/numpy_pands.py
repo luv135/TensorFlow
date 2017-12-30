@@ -128,12 +128,65 @@ print(s)
 dates = pd.date_range('2016-12-22', periods=6)
 print(dates)
 
+# df = pd.DataFrame(np.random.random((6, 5)), index=dates, columns=list('ABCDE'))
+df = pd.DataFrame(np.arange(30).reshape((6, 5)), index=dates, columns=list('ABCDE'))
+print(df.describe())
+print(df.index)
+print(df)
+print(df.dtypes)
+print('----------')
+print(df)
+print('----------')
+print(df.head(n=2))
 # frame = pd.DataFrame(np.random.random((6, 5)), index=dates)
 frame = pd.DataFrame(np.arange(0, 30).reshape(6, 5), index=dates)
 print(frame)
 print(frame.index)
 
-print(frame.describe())
+
+def ptl(s):
+    print('----------')
+    print(s)
+
+
+def df_pt(s):
+    ptl(df)
+    ptl(s)
+
+
+ptl(df.values)
+ptl(df)
+# 转置
+ptl(df.T)
+ptl(df)
+ptl(df['A'])
+df_pt(df[1:3])
+df_pt(df['20161224':'20161226'])
+df_pt(df.loc[dates[0]])
+
+# 切片
+df_pt(df.loc[:, ['A', 'C']])
+df_pt(df.loc['20161224':'20161226', ['A', 'C']])
+df_pt(df.loc['20161226', ['A', 'C']])
+
+# 坐标对象
+df_pt(df.loc[dates[0], 'B'])
+df_pt(df.at[dates[0], 'B'])
+
+# 选择行
+df_pt(df.iloc[3])
+
+df_pt(df.iloc[:, 1:3])
+df_pt(df.iloc[2, 2])
+df_pt(df.iat[2, 2])
+df_pt(df.A > 5)
+df_pt(df > 5)
+
+df.iloc[0, 0] = np.nan
+df.iloc[2, 3] = np.nan
+df_pt(df)
+# 丢弃 nan 行
+print(df.dropna(axis=0))
 
 
 print(frame)
