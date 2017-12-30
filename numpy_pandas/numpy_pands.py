@@ -128,8 +128,14 @@ print(s)
 dates = pd.date_range('2016-12-22', periods=6)
 print(dates)
 
-frame = pd.DataFrame(np.random.random((6, 5)), index=dates)
+# frame = pd.DataFrame(np.random.random((6, 5)), index=dates)
+frame = pd.DataFrame(np.arange(0, 30).reshape(6, 5), index=dates)
 print(frame)
 print(frame.index)
 
 print(frame.describe())
+
+
+print(frame)
+
+print(frame.ix['2016-12-24', 3])
